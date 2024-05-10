@@ -1,0 +1,20 @@
+<section>
+  <div class="head_sec">
+    <h3>Stories and Point</h3>
+  </div>
+
+  <div class="content">
+
+    <div class="card" *ngFor="let data of storiesData">
+      <div class="title">
+        <h4>{{data.name}}</h4>
+      </div>
+
+      <div class="point">
+        <p>{{data.points}}</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>

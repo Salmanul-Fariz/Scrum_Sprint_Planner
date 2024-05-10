@@ -1,0 +1,25 @@
+<section>
+  <div class="head_sec">
+    <h3>Sprint Calculator</h3>
+  </div>
+
+  <form [formGroup]="StoryFormData" (ngSubmit)="submitForm()">
+
+    <div class="form_control">
+      <input type="number" id="storyPoint" formControlName="storyPoint" placeholder="Story Points">
+    </div>
+
+    <div class="form_control">
+      <button type="submit">Auto Selected Stories</button>
+    </div>
+  </form>
+
+  <div class="mt-3">
+    <button type="button" (click)="clearStories()">Clear Stories</button>
+  </div>
+
+  <div class="mt-3">
+    <button type="button" (click)="clearSprints()">Clear Sprints</button>
+  </div>
+
+</section>

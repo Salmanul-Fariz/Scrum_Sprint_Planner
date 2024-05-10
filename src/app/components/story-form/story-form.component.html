@@ -1,0 +1,20 @@
+<section>
+  <div class="head_sec">
+    <h3>Add Story Form</h3>
+  </div>
+
+  <form [formGroup]="StoryFormData" (ngSubmit)="createStory()">
+    <div class="form_control">
+      <input type="text" id="storyTitle" formControlName="storyTitle" placeholder="Story Title">
+    </div>
+
+    <div class="form_control">
+      <input type="number" id="storyPoint" formControlName="storyPoint" placeholder="Story Points">
+    </div>
+
+    <div class="form_control">
+      <button type="submit">Add Story</button>
+    </div>
+  </form>
+
+</section>
